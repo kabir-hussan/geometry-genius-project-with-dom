@@ -32,9 +32,9 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Triangle</h2>
             <p>Area (A) = 0.5 &times; b &times; h</p>
-            <div class="mb-4">
-              <input id="triangle-base" class="w-24 text-base p-2 rounded-md" type="text" placeholder="b"> <span class="mr-2">cm</span>
-              <input id="triangle-height" class="w-24 text-base p-2 rounded-md" type="text" placeholder="h"><span>cm</span>
+            <div class="mb-2">
+              <input id="triangle-base" class="w-20 text-base p-2 rounded-md" type="text" placeholder="b"> <span class="mr-2">cm</span>
+              <input id="triangle-height" class="w-20 text-base p-2 rounded-md" type="text" placeholder="h"><span>cm</span>
             </div>
             <div class="p-4">
               <p class="text-2xl font-medium">Area: <span id="triangle-area-value"></span> <span>cm</span><sup>2</sup></p>
@@ -51,16 +51,16 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rectangle</h2>
-            <p>Area (A) = w &times; l</p>
-            <div class="mb-4">
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="w"> <span class="mr-2">cm</span>
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="l"> <span>cm</span>
+            <p>Area (A) = l &times; w</p>
+            <div class="mb-2">
+              <input id="rectangle-length" class="w-20 text-base p-2 rounded-md" type="text" placeholder="l"> <span class="mr-2">cm</span>
+              <input id="rectangle-width" class="w-20 text-base p-2 rounded-md" type="text" placeholder="w"> <span>cm</span>
             </div>
             <div class="p-4">
-              <p class="text-2xl font-medium">Area: <span id="triangle-area-value"></span> <span>cm</span><sup>2</sup></p>
+              <p class="text-2xl font-medium">Area: <span id="rectangle-area-value"></span> <span>cm</span><sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-wide btn-info">Calculate</button>
+              <button onclick="rectangleAreaCalculate()" class="btn btn-wide btn-info">Calculate</button>
             </div>
           </div>
         </div>
@@ -72,9 +72,9 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Parallelogram</h2>
             <p>Area (A) = b &times; h</p>
-            <div class="mb-4">
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="b"> <span class="mr-2">cm</span>
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="h"> <span>cm</span>
+            <div class="mb-2">
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="b"> <span class="mr-2">cm</span>
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="h"> <span>cm</span>
             </div>
             <div class="card-actions">
               <button class="btn btn-wide btn-info">Calculate</button>
@@ -89,9 +89,9 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rhombus</h2>
             <p>Area (A) = 0.5 &times; d1 &times; d2</p>
-            <div class="mb-4">
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="d1"> <span class="mr-2">cm</span>
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="d2"> <span>cm</span>
+            <div class="mb-2">
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="d1"> <span class="mr-2">cm</span>
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="d2"> <span>cm</span>
             </div>
             <div class="card-actions">
               <button class="btn btn-wide btn-info">Calculate</button>
@@ -106,9 +106,9 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Pentagon</h2>
             <p>Area (A) = 0.5 &times; p &times; b</p>
-            <div class="mb-4">
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="p"> <span class="mr-2">cm</span>
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
+            <div class="mb-2">
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="p"> <span class="mr-2">cm</span>
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
             </div>
             <div class="card-actions">
               <button class="btn btn-wide btn-info">Calculate</button>
@@ -123,9 +123,9 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Ellipse</h2>
             <p>Area (A) = 3.1416 &times; a &times; b</p>
-            <div class="mb-4">
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="a"> <span class="mr-2">cm</span>
-              <input class="w-24 text-base p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
+            <div class="mb-2">
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="a"> <span class="mr-2">cm</span>
+              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
             </div>
             <div class="card-actions">
               <button class="btn btn-wide btn-info">Calculate</button>
@@ -144,6 +144,7 @@
 
   </footer>
   <script src="js/triangle-calculate.js"></script>
+  <script src="js/rectangle-calculate.js"></script>
 </body>
 
 </html>
