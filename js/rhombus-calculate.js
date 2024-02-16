@@ -1,6 +1,6 @@
 // objective: create a reusable function for calculate both d1 and d2
 
-function pentagonAreaCalculate(){
+function rhombusAreaCalculate(){
     const d1= getInputValueById('rhombus-d1');
     const d2= getInputValueById('rhombus-d2');
     const area= 0.5 * d1 * d2; 

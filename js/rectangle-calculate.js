@@ -1,6 +1,6 @@
 // create rectangle area function
 
-function parallelogramAreaCalculate()
+function rectangleAreaCalculate()
 {
     const rectangleLength= document.getElementById('rectangle-length').value;
     const length= parseFloat(rectangleLength);
