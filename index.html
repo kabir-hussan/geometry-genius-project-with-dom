@@ -113,11 +113,14 @@
             <h2 class="card-title">Pentagon</h2>
             <p class="font-medium">Area (A) = 0.5 &times; p &times; b</p>
             <div class="mb-2">
-              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="p"> <span class="mr-2">cm</span>
-              <input class="w-20 text-base p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
+              <input id="pentagon-perimeter" class="w-20 text-base p-2 rounded-md" type="text" placeholder="p"> <span class="mr-2">cm</span>
+              <input id="pentagon-apothem" class="w-20 text-base p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
+            </div>
+            <div class="p-4">
+              <p class="text-2xl font-medium">Area: <span id="pentagon-area-value"></span> <span>cm</span><sup>2</sup></p>
             </div>
             <div class="card-actions">
-              <button class="btn btn-wide btn-info">Calculate</button>
+              <button onclick="pentagonAreaCalculate()" class="btn btn-wide btn-info">Calculate</button>
             </div>
           </div>
         </div>
@@ -153,6 +156,7 @@
   <script src="js/rectangle-calculate.js"></script>
   <script src="js/parallelogram-calculate.js"></script>
   <script src="js/rhombus-calculate.js"></script>
+  <script src="js/pentagon-calculate.js"></script>
 </body>
 
 </html>

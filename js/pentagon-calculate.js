@@ -1,11 +1,11 @@
-// objective: create a reusable function for calculate both d1 and d2
+// objective: create a reusable function for calculate both perimeter and apothem
 
 function pentagonAreaCalculate(){
-    const d1= getInputValueById('rhombus-d1');
-    const d2= getInputValueById('rhombus-d2');
-    const area= 0.5 * d1 * d2; 
+    const p= getInputValueById('pentagon-perimeter');
+    const b= getInputValueById('pentagon-apothem');
+    const area= 0.5 * p * b; 
 
-    setValueOfArea('rhombus-area-value', area);
+    setValueOfArea('pentagon-area-value', area);
 
 }
 
