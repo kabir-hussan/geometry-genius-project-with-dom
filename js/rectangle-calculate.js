@@ -12,5 +12,5 @@ function rectangleAreaCalculate()
 
     const AreaOfRectangle= document.getElementById('rectangle-area-value');
     AreaOfRectangle.innerText= area;
-    console.log(AreaOfRectangle);
+    // console.log(AreaOfRectangle);
 }
